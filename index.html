@@ -29,7 +29,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      padding: 56px 20px 80px;
+      padding: 32px 16px 40px;
     }
 
     /* ── Grid noise texture overlay ── */
@@ -45,20 +45,20 @@
       position: relative; z-index: 1;
       width: 100%; max-width: 880px;
       display: grid;
-      grid-template-columns: minmax(220px, 1fr) minmax(300px, 1.6fr);
-      gap: 32px;
+      grid-template-columns: 1fr;
+      gap: 20px;
       align-items: start;
     }
     .left-column,
     .right-column {
       display: flex;
       flex-direction: column;
-      gap: 28px;
+      gap: 18px;
     }
 
     /* ── Avatar ── */
     .avatar-wrap {
-      display: flex; justify-content: center; margin-bottom: 20px;
+      display: flex; justify-content: center; margin-bottom: 14px;
     }
     .avatar {
       width: 140px; height: 140px; border-radius: 50%;
@@ -74,7 +74,7 @@
     .avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
 
     /* ── Header text ── */
-    .header { text-align: center; margin-bottom: 32px; }
+    .header { text-align: center; margin-bottom: 18px; }
     .name {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 26px; font-weight: 700;
@@ -112,19 +112,19 @@
       font-size: 10px; font-weight: 600;
       text-transform: uppercase; letter-spacing: 1.2px;
       color: var(--muted);
-      margin-bottom: 10px; padding-left: 2px;
+      margin-bottom: 3px; padding-left: 2px;
     }
 
     /* ── Link groups ── */
-    .group { margin-bottom: 28px; }
+    .group { margin-bottom: 10px; }
     /* ── Stats grid ── */
     .stats-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
+      gap: 8px;
     }
     .stat-item {
-      padding: 14px 12px;
+      padding: 12px 10px;
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
@@ -146,11 +146,11 @@
       letter-spacing: 0.4px;
     }    /* ── Education ── */
     .education-item {
-      padding: 14px 14px;
+      padding: 10px 10px;
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      margin-bottom: 8px;
+      margin-bottom: 5px;
     }
     .edu-title {
       font-family: 'Space Grotesk', sans-serif;
@@ -187,14 +187,14 @@
       line-height: 1.4;
     }    /* ── Link card ── */
     .link-item {
-      display: flex; align-items: center; gap: 14px;
-      padding: 14px 16px;
+      display: flex; align-items: center; gap: 10px;
+      padding: 10px 12px;
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       text-decoration: none;
       color: var(--text);
-      margin-bottom: 8px;
+      margin-bottom: 4px;
       transition: border-color 0.18s, background 0.18s, box-shadow 0.18s;
       position: relative;
       overflow: hidden;
@@ -244,11 +244,11 @@
     }
     /* ── Parent Contacts ── */
     .parent-contact {
-      padding: 14px 16px;
+      padding: 10px 12px;
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      margin-top: 8px;
+      margin-top: 4px;
     }
     .parent-name,
     .email-contact-title {
@@ -262,8 +262,8 @@
     .email-contact-detail {
       font-size: 13px;
       color: var(--muted);
-      margin-bottom: 6px;
-      line-height: 1.5;
+      margin-bottom: 4px;
+      line-height: 1.4;
     }
     .detail-label {
       font-weight: 500;
@@ -327,10 +327,25 @@
       </div>
     </div>
 
-    <div class="footer">built with ♦ on GitHub Pages</div>
-  </div>
+    <!-- ── Stats ── -->
+    <div class="group">
+      <div class="section-label">Stats</div>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-value">.385</div>
+          <div class="stat-label">Batting Avg</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">12</div>
+          <div class="stat-label">Home Runs</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">42</div>
+          <div class="stat-label">RBIs</div>
+        </div>
+      </div>
+    </div>
 
-  <div class="right-column">
 
     <!-- ── Socials ── -->
     <div class="group">
@@ -424,6 +439,7 @@
         <div class="edu-awards">Awards: All-Conference Athlete, Cum Laude</div>
       </div>
     </div>
+    <div class="footer">built with ♦ on GitHub Pages</div>
   </div>
 </div>
 
