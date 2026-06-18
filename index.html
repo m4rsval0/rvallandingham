@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rilee Valldigham</title>
+  <title>Rylee Valldigham</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
@@ -105,6 +105,11 @@
       letter-spacing: 0.6px;
       text-transform: uppercase;
     }
+    .tag-pill-large {
+      font-size: 14px;
+      padding: 6px 14px;
+      border-radius: 24px;
+    }
 
     /* ── Section label ── */
     .section-label {
@@ -112,11 +117,29 @@
       font-size: 10px; font-weight: 600;
       text-transform: uppercase; letter-spacing: 1.2px;
       color: var(--muted);
-      margin-bottom: 3px; padding-left: 2px;
+      margin-bottom: 2px; padding-left: 2px;
+    }
+    .contact-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 6px;
+      padding-left: 2px;
+    }
+    .contact-area {
+      margin-top: 6px;
+    }
+    .contact-area .section-label {
+      margin-top: 12px;
+      margin-bottom: 4px;
+    }
+    .contact-area .parent-contact {
+      margin-top: 6px;
+      margin-bottom: 6px;
     }
 
     /* ── Link groups ── */
-    .group { margin-bottom: 10px; }
+    .group { margin-bottom: 8px; }
     /* ── Stats grid ── */
     .stats-grid {
       display: grid;
@@ -130,6 +153,12 @@
       border-radius: var(--radius);
       text-align: center;
     }
+      .time-row {
+        display: flex;
+        gap: 6px;
+        grid-column: 1 / -1; /* span full grid width */
+      }
+      .time-row .stat-item { flex: 1; }
     .stat-value {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 20px;
@@ -170,7 +199,7 @@
     }
     .edu-gpa {
       font-size: 11px;
-      color: var(--accent);
+      color: var(--muted);
       margin-top: 6px;
       font-weight: 500;
     }
@@ -182,7 +211,7 @@
     }
     .edu-awards {
       font-size: 11px;
-      color: var(--muted);
+      color: var(--accent);
       margin-top: 4px;
       line-height: 1.4;
     }    /* ── Link card ── */
@@ -244,26 +273,26 @@
     }
     /* ── Parent Contacts ── */
     .parent-contact {
-      padding: 10px 12px;
+      padding: 8px 10px;
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      margin-top: 4px;
+      margin-top: 3px;
     }
     .parent-name,
     .email-contact-title {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 700;
       color: var(--text);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
     .parent-detail,
     .email-contact-detail {
       font-size: 13px;
       color: var(--muted);
-      margin-bottom: 4px;
-      line-height: 1.4;
+      margin-bottom: 3px;
+      line-height: 1.35;
     }
     .detail-label {
       font-weight: 500;
@@ -303,45 +332,90 @@
 
     <!-- Header -->
     <div class="header">
-      <div class="name">Rilee Vallandingham</div>
-      <div class="tagline">Physics → Robotics &amp; AI<br>Building autonomous systems, one solder joint at a time.</div>
-      <span class="tag-pill">Open to grad opportunities</span>
+      <div class="name">Rylee Vallandingham</div>
+      <span class="tag-pill tag-pill-large">#00</span>
+      <div class="tagline">
+        DOB: 03/13/2010<br>
+        Class of 2028<br>
+        Height: 5'2"<br>
+        Weight: 132 lbs
+      </div>
+      <span class="tag-pill tag-pill-large">NCAA# 2511777956</span>
     </div>
 
-    <!-- ── Stats ── -->
+    <!-- ── Offensive Stats ── -->
     <div class="group">
-      <div class="section-label">Stats</div>
+      <div class="section-label contact-title">Offensive Stats</div>
       <div class="stats-grid">
         <div class="stat-item">
-          <div class="stat-value">.385</div>
-          <div class="stat-label">Batting Avg</div>
+          <div class="stat-value">43</div>
+          <div class="stat-label">AB</div>
         </div>
         <div class="stat-item">
-          <div class="stat-value">12</div>
-          <div class="stat-label">Home Runs</div>
+          <div class="stat-value">.465</div>
+          <div class="stat-label">BA</div>
         </div>
         <div class="stat-item">
-          <div class="stat-value">42</div>
-          <div class="stat-label">RBIs</div>
+          <div class="stat-value">.650</div>
+          <div class="stat-label">OBP</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">.767</div>
+          <div class="stat-label">SLG</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">16</div>
+          <div class="stat-label">RBI</div>
         </div>
       </div>
     </div>
 
-    <!-- ── Stats ── -->
+    <!-- ── Defensive Stats ── -->
     <div class="group">
-      <div class="section-label">Stats</div>
+      <div class="section-label contact-title">Defensive Stats</div>
       <div class="stats-grid">
         <div class="stat-item">
-          <div class="stat-value">.385</div>
-          <div class="stat-label">Batting Avg</div>
+          <div class="stat-value">78</div>
+          <div class="stat-label">TC</div>
         </div>
         <div class="stat-item">
-          <div class="stat-value">12</div>
-          <div class="stat-label">Home Runs</div>
+          <div class="stat-value">77</div>
+          <div class="stat-label">PO</div>
         </div>
         <div class="stat-item">
-          <div class="stat-value">42</div>
-          <div class="stat-label">RBIs</div>
+          <div class="stat-value">1.000</div>
+          <div class="stat-label">FPCT</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 2026 High School Season ── -->
+    <div class="group">
+      <div class="section-label contact-title">2026 High School Season</div>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-value">2</div>
+          <div class="stat-label">HR</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">3.14s</div>
+          <div class="stat-label">Home → 1st</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">12.73s</div>
+          <div class="stat-label">Home → Home</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">Right</div>
+          <div class="stat-label">Throws</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">Right</div>
+          <div class="stat-label">Bats</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">C/1st/2nd/OF</div>
+          <div class="stat-label">Position</div>
         </div>
       </div>
     </div>
@@ -349,9 +423,50 @@
 
     <!-- ── Socials ── -->
     <div class="group">
-      <div class="section-label">Socials</div>
+      <div class="section-label contact-title">Socials</div>
 
-      <a class="link-item" href="https://instagram.com/YOUR_HANDLE" target="_blank" rel="noopener">
+      <a class="link-item" href="https://youtube.com/@ryleevallandingham00?si=vH1VuEkmpz843kdA" target="_blank" rel="noopener">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="var(--accent)">
+            <rect x="2" y="5" width="20" height="14" rx="4" ry="4"/>
+            <path d="M10 15l5-3-5-3z" fill="#fff"/>
+          </svg>
+        </div>
+        <div class="link-text">
+          <div class="link-title">YouTube</div>
+          <div class="link-sub">@RyleeVallandingham00</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="link-item" href="https://my.sportsrecruits.com/athlete/rylee_vallandingham" target="_blank" rel="noopener">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="var(--accent)">
+            <path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/>
+          </svg>
+        </div>
+        <div class="link-text">
+          <div class="link-title">SportsRecruits</div>
+          <div class="link-sub">@rylee_vallandingham</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="link-item" href="https://www.fieldlevel.com/app/profile/rylee.vallandingham/softball?utm_campaign=athlete-profile-share&utm_source=fieldlevel&utm_medium=share" target="_blank" rel="noopener">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="var(--accent)">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M8 12h8" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="link-text">
+          <div class="link-title">FieldLevel</div>
+          <div class="link-sub">@rylee.vallandingham</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="link-item" href="https://www.instagram.com/rylee.vallandingham/" target="_blank" rel="noopener">
         <div class="icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
@@ -361,12 +476,12 @@
         </div>
         <div class="link-text">
           <div class="link-title">Instagram</div>
-          <div class="link-sub">@YOUR_HANDLE</div>
+          <div class="link-sub">@rylee.vallandingham</div>
         </div>
         <span class="arrow">→</span>
       </a>
-
-      <a class="link-item" href="https://twitter.com/YOUR_HANDLE" target="_blank" rel="noopener">
+      
+      <a class="link-item" href="https://x.com/Rylee_Vall" target="_blank" rel="noopener">
         <div class="icon">
           <svg viewBox="0 0 24 24" fill="var(--accent)">
             <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
@@ -374,44 +489,80 @@
         </div>
         <div class="link-text">
           <div class="link-title">X / Twitter</div>
-          <div class="link-sub">@YOUR_HANDLE</div>
+          <div class="link-sub">@Rylee_Vall</div>
         </div>
         <span class="arrow">→</span>
       </a>
-
     </div>
 
     <!-- ── Contact ── -->
     <div class="group">
-      <div class="section-label">Contact</div>
+      <div class="section-label contact-title">Contact</div>
 
-      <div class="parent-contact email-contact">
-        <div class="email-contact-title">Email</div>
-        <div class="email-contact-detail">your@email.com</div>
-        <div class="email-contact-detail"><a href="mailto:your@email.com">Send email</a></div>
-      </div>
+      <div class="contact-area">
+        <div class="section-label">Player</div>
+        <div class="parent-contact">
+          <div class="parent-name">Rilee Vallandingham</div>
+          <div class="parent-detail">
+            <span class="detail-label">Email:</span>
+            <a href="mailto:ryry.vall13@gmail.com">ryry.vall13@gmail.com</a>
+          </div>
+          <div class="parent-detail">
+            <span class="detail-label">Phone:</span>
+            <a href="tel:+1-301-904-5455">301-904-5455</a>
+          </div>
+        </div>
 
-      <div class="parent-contact">
-        <div class="parent-name">Parent 1 (Mom)</div>
-        <div class="parent-detail">
-          <span class="detail-label">Email:</span>
-          <a href="mailto:parent1@email.com">parent1@email.com</a>
+        <div class="section-label">Parents</div>
+        <div class="parent-contact">
+          <div class="parent-name">Nick Vallandingham</div>
+          <div class="parent-detail">
+            <span class="detail-label">Email:</span>
+            <a href="mailto:nickvham@gmail.com">nickvham@gmail.com</a>
+          </div>
+          <div class="parent-detail">
+            <span class="detail-label">Phone:</span>
+            <a href="tel:+1-301-481-1763">301-481-1763</a>
+          </div>
         </div>
-        <div class="parent-detail">
-          <span class="detail-label">Phone:</span>
-          <a href="tel:+1-555-123-4567">(555) 123-4567</a>
-        </div>
-      </div>
 
-      <div class="parent-contact">
-        <div class="parent-name">Parent 2 (Dad)</div>
-        <div class="parent-detail">
-          <span class="detail-label">Email:</span>
-          <a href="mailto:parent2@email.com">parent2@email.com</a>
+        <div class="parent-contact">
+          <div class="parent-name">Tracy Vallandingham</div>
+          <div class="parent-detail">
+            <span class="detail-label">Email:</span>
+            <a href="mailto:tbarriger@hotmail.com">tbarriger@hotmail.com</a>
+          </div>
+          <div class="parent-detail">
+            <span class="detail-label">Phone:</span>
+            <a href="tel:+1-301-904-9185">301-904-9185</a>
+          </div>
         </div>
-        <div class="parent-detail">
-          <span class="detail-label">Phone:</span>
-          <a href="tel:+1-555-987-6543">(555) 987-6543</a>
+
+        <div class="section-label">Coaches</div>
+        <div class="parent-contact">
+          <div class="parent-name">Ray Hall</div>
+          <div class="parent-name">Northern Calvert Fury 16U Hall</div>
+          <div class="parent-detail">
+            <span class="detail-label">Email:</span>
+            <a href="mailto:raybhall@hotmail.com">raybhall@hotmail.com</a>
+          </div>
+          <div class="parent-detail">
+            <span class="detail-label">Phone:</span>
+            <a href="tel:+1-443-416-4852">443-416-4852</a>
+          </div>
+        </div>
+
+        <div class="parent-contact">
+          <div class="parent-name">Christie Doerrer</div>
+          <div class="parent-name">Leonardtown High School</div>
+          <div class="parent-detail">
+            <span class="detail-label">Email:</span>
+            <a href="mailto:cmdoerrer@smcps.org">cmdoerrer@smcps.org</a>
+          </div>
+          <div class="parent-detail">
+            <span class="detail-label">Phone:</span>
+            <a href="tel:+1-301-904-8901">301-904-8901</a>
+          </div>
         </div>
       </div>
 
@@ -419,27 +570,19 @@
 
     <!-- ── Education ── -->
     <div class="group">
-      <div class="section-label">Education</div>
+      <div class="section-label contact-title">Education</div>
 
       <div class="education-item">
-        <div class="edu-title">Master's in Robotics</div>
+        <div class="edu-title">Leonardtown High School</div>
         <div class="edu-school">University Name</div>
         <div class="edu-year">2024 - 2026</div>
-        <div class="edu-gpa">GPA: 3.85</div>
-        <div class="edu-extra">Extracurriculars: Robotics Club, IEEE</div>
-        <div class="edu-awards">Awards: Dean's List, Best Project Award</div>
+        <div class="edu-gpa">GPA: 4.14</div>
+        <div class="edu-extra">Extracurriculars: Leonardtown Key Club, Boys Basketball Manager (Winter 2025)</div>
+        <div class="edu-awards">Awards/Achievements: Coaches Award (2026), Minds in Motion (2025/2026)</div>
       </div>
-
-      <div class="education-item">
-        <div class="edu-title">Bachelor's in Physics</div>
-        <div class="edu-school">University Name</div>
-        <div class="edu-year">2020 - 2024</div>
-        <div class="edu-gpa">GPA: 3.92</div>
-        <div class="edu-extra">Extracurriculars: Softball Team, Science Olympiad</div>
-        <div class="edu-awards">Awards: All-Conference Athlete, Cum Laude</div>
-      </div>
+    
     </div>
-    <div class="footer">built with ♦ on GitHub Pages</div>
+    <div class="footer">Compiled by Marsval0 LLC on GitHub Pages</div>
   </div>
 </div>
 
